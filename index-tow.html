@@ -198,6 +198,63 @@ a.up {
     left: 100%;
     z-index: 999;
 }
+/* ... باقي الأنماط كما هي ... */
+
+.dark-mode-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  cursor: pointer;
+  width: 40px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3); /* تأثير الظل الداخلي */
+}
+
+.toggle-icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 2px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.toggle-input:checked + .toggle-label .toggle-icon {
+  background-color: #2196F3;
+  transform: translateX(20px);
+}
+.dark-mode {
+background:rgb(0, 0,0,0.8);
+}
+.dark-mode .morning{
+background:#2b2b2b;
+box-shadow:3px 3px 18px #000;
+}
+.dark-mode p{
+color:#ddd;
+}
+.dark-mode q{
+color:#aaa;
+}
+.dark-mode span{
+color:#93B1A6;
+}
+.dark-mode .links{
+  background-color:#333;
+  box-shadow:3px 3px 18px #000;
+}
+.dark-mode nav a {
+  color: #fff;
+}
 
     </style>
     <a name="up"></a>
@@ -216,6 +273,12 @@ a.up {
     <div class="na-1">
     <a href="index-tow.html"><h1> الاذكار</h1></a>
     </div>
+<div class="dark-mode-container"> 
+<input type="checkbox" id="darkModeToggle" class="toggle-input">
+<label for="darkModeToggle" class="toggle-label">
+<div class="toggle-icon"></div>
+</label>
+</div>
     </nav>
   <div class="sec">
     <a name="mor"></a>
@@ -540,5 +603,12 @@ a.up {
     </div>
  </div>
 <a href="#up" class="up"> <img src="icons8-slide-up-48.png" alt=""> </a>
+  <script>
+  function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+  }
+  
+  document.getElementById("darkModeToggle").addEventListener("click", toggleDarkMode);
+  </script>
   </body>
 </html>
