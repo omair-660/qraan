@@ -76,7 +76,7 @@ aside a {
     text-decoration: none;
     font-size: 22px;
     overflow: hidden;
-    color: #81c784;
+    color: #4caf50;
     position: relative;
     padding-bottom: 6px;
 }
@@ -192,7 +192,7 @@ p.end-mor {
     color: #009688d4;
     border-bottom: 1px solid;
 }
-a.up {
+a.up{
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -208,8 +208,13 @@ a.up {
     justify-content: center;
     align-items: center;
     color: #fff;
-    font-size: 23px;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: 700;
+  border:3px solid transparent;
+}
+a.up:hover{
+ background:#93B1A6; 
+  border: 3px solid #4caf50;
 }
 .up.open{
   transform: translateX(0);
@@ -275,6 +280,7 @@ aside.opeen{
     background-color: #333;
     box-shadow: 0px 0px 0px #000;
     transition: 1s;
+  
 }
 .dark-mode .morning {
     background: #2b2b2b;
@@ -293,6 +299,11 @@ aside.opeen{
     color: #aaa;
     transition: 1s;
 }
+    .dark-mode aside a {
+color:#4caf50;
+      
+    }
+    
 .dark-mode aside{
   background: #333;
       box-shadow: 3px 3px 18px #000;
@@ -654,4 +665,3 @@ aside.opeen{
 </script>
   </body>
 </html>
-
