@@ -53,7 +53,7 @@ aside {
     top: 0;
     left: 0;
     z-index: 99999;
-    
+   } 
 aside .links {
 padding-top: 45%;
 display: flex;
