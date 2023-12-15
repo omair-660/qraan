@@ -1,0 +1,386 @@
+html{
+  scroll-behavior: smooth;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+nav {
+    width: 100%;
+    background-color: #edecec;
+    padding: 19px 0;
+    /* text-align: center; */
+    position: fixed;
+    top: 0;
+    z-index: 99999999;
+    box-shadow: 1px 2px 20px #aaa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+nav a{
+text-decoration: none;
+}
+nav h1 {
+  color: #4caf50;
+  position: relative;
+}
+nav h1::after {
+  background-color: #4caf50;
+  position: absolute;
+  content: "";
+  bottom: -33px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  border-top-right-radius: 38%;
+  border-bottom-right-radius: 38%;
+  transition: 0.5s;
+}
+nav h1:hover::after{
+  width: 100%;
+}
+aside {
+    transform: translateX(-120%);
+    background-image: linear-gradient(to top,#e8f5e9,#edecec);
+    height: 100vh;
+    width: 270px;
+    box-shadow: 1px 1px 31px #cccccca8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    
+aside .links {
+padding-top: 45%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+aside a {
+text-decoration: none;
+font-size: 22px;
+overflow: hidden;
+color: #81c784;
+position: relative;
+padding: 25px;
+width: 100%;
+text-align: center;
+transition: 0.5s;
+}
+aside a:hover{
+background: #ffffff8f;
+}
+.dark-mode aside a:hover{
+background: #000;
+}
+aside a::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #4caf50;
+  transition: 0.5s;
+}
+aside a:hover::after{
+width: 100%;
+}
+.sec {
+  margin: 130px auto;
+  width: fit-content;
+}
+.morning {
+  text-align: center;
+  background: #e8f5e961;
+  padding: 1px 18px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 11px #bdbdbdc2;
+}
+.morning h2 {
+  padding-top: 7px;
+  color: #4caf50;
+  font-size: 26px;
+  text-align: center;
+  margin:12px auto;
+  width: fit-content;
+  border-bottom: 1px solid darkgrey;
+  padding-bottom: 7px;
+}
+.morning p {
+color: #000000;
+word-spacing: 4px;
+border-bottom: 1px solid #aaa;
+padding-bottom: 6px;
+line-height: 1.6;
+font-weight: 700;
+font-size: 19px;
+padding-top: 10px
+}
+q {
+color: #555;
+font-size: 16px;
+}
+body {
+background-color: #eee;
+scroll-behavior: smooth;
+}
+.con-mor {
+text-align: end;
+width: 500px;
+}
+@media (max-width:767px) {
+aside .links {
+padding-top: 5%;
+
+}
+aside a {
+text-decoration: none;
+font-size: 16px;
+overflow: hidden;
+color: #81c784;
+position: relative;
+}
+aside {
+height: unset;
+width: 100%;
+box-shadow: 0 14px 22px #d3caca;
+position: fixed;
+top: 107px;
+}
+.sec {
+margin: 129px auto 0 auto;
+width: fit-content;
+}
+.con-mor {
+text-align: end;
+width: 301px;
+}
+.morning p{
+width: 100%;
+}
+p.end-mor{
+white-space: nowrap;
+font-size: 35px!important;
+}
+}
+.morning span {
+color: #388e3c;
+font-size: 19px;
+font-weight: bold;
+border-top: 1px dashed black;
+padding-top: 3px;
+}
+p.end-mor {
+border: none;
+text-align: center;
+font-size: 55px;
+padding: 0;
+margin: 18px 0;
+opacity: 0.5;
+word-spacing: 4px;
+text-transform: uppercase;
+color: #009688d4;
+border-bottom: 1px solid;
+}
+a.up {
+position: fixed;
+bottom: 10px;
+right: 10px;
+z-index: 1003;
+transform: translateX(72px);
+transition: 0.5s;
+background: #4caf50;
+width: 46px;
+height: 46px;
+border-radius: 50%;
+text-decoration: none;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+font-size: 23px;
+font-weight: 600;
+border:2px solid transparent;
+}
+a.up:hover{
+border-color: #4caf50;
+background: none;
+color: #212121;
+}
+.dark-mode a.up:hover{
+border-color: #4caf50;
+background: none;
+color: #eee;
+}
+.up.open{
+transform: translateX(0);
+}
+.lenght {
+display: flex;
+align-items: center;
+background: linear-gradient(45deg, #4caf50, #9ccc65);
+border-radius: 11px;
+padding: 5px;
+justify-content: center;
+}
+.plus {
+margin: 8px;
+font-weight: 700;
+color: #fff;
+background: #323232;
+border-radius: 50%;
+width: 30px;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+input[type="text"] {
+  outline: none;
+border: 3px solid transparent;
+transition: 0.7s;
+width: 84px;
+height: 28px;
+border-radius: 4px;
+text-align: center;
+background: #212121;
+color: #fff;
+}
+aside.opeen{
+transform: translateX(0);
+}
+
+.dark-mode-container {
+display: flex;
+align-items: center;
+margin-top: 10px;
+}
+.toggle-input {
+display: none;
+}
+.toggle-label {
+cursor: pointer;
+width: 40px;
+height: 20px;
+border: 1px solid #ccc;
+border-radius: 20px;
+box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.toggle-icon {
+width: 16px;
+height: 16px;
+border-radius: 50%;
+background-color: #ccc;
+margin: 2px;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.toggle-input:checked + .toggle-label .toggle-icon {
+background-color: #4caf50;
+transform: translateX(20px);
+margin-top: 1px;
+}
+.dark-mode {
+background: rgb(0, 0,0,0.8);
+transition: 1s;
+}
+.dark-mode nav {
+background: #333;
+box-shadow: 3px 3px 18px #000;
+transition: 1s;
+}
+.dark-mode .links {
+background-color: #333;
+box-shadow: 0px 0px 0px #000;
+transition: 1s;
+}
+.dark-mode .morning {
+background: #2b2b2b;
+box-shadow: 3px 3px 18px #000;
+transition: 0.6s;
+}
+.dark-mode p {
+color: #e5e5e5eb;
+transition: 0.5s;
+}
+.dark-mode span {
+color: #93B1A6;
+transition: 0.5s;
+}
+.dark-mode q {
+color: #aaa;
+transition: 1s;
+}
+.dark-mode aside{
+background: #333;
+  box-shadow: 3px 3px 18px #000;
+  transition: 1s;
+}
+.dark-mode .lenght{
+background: linear-gradient(45deg, #316033, #2a410f);
+position: relative;
+z-index: 2112;
+}
+.dark-mode .cursor{
+background: #c5e1a5;
+z-index: 0;
+}
+.menu {
+width: 35px;
+height: 28px;
+position: relative;
+cursor: pointer;
+
+z-index: 45;
+}
+.menu span {
+background-color: #4caf50;
+position: absolute;
+/* top: 26px; */
+width: 100%;
+height: 2px;
+transition: .5s;
+}
+
+.menu span:nth-child(2){
+top:10px
+}
+.menu span:nth-child(3){
+top:20px
+}
+.menu.active span:first-child{
+transform: rotate(45deg);
+background-color: red;
+top: 6px;
+
+}
+.menu.active span:nth-child(2){
+opacity: 0;
+}
+.menu.active span:nth-child(3){
+transform: rotate(-45deg);
+top: 6px;
+background-color: red;
+}
+.cursor {
+background: #dc4af6;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+position: fixed;
+mix-blend-mode: difference;
+z-index: -1;
+}
+#noom ,#wake, #night{
+  width: 0;
+  height: 0;
+  transition: 1s;
+  overflow: hidden;
+}

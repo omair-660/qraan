@@ -1,6 +1,14 @@
 let scroll = document.querySelector('.up');
 let aside = document.getElementById("aside");
 let menu = document.getElementById("menu");
+let cursor = document.querySelector(".cursor");
+
+addEventListener("mousemove",function (e) {
+  cursor.style.cssText = `
+  top:${e.y -20}px;
+  left:${e.x -20}px
+  `
+})
 
 function toggleDarkMode() {
 document.body.classList.toggle("dark-mode");
@@ -59,7 +67,9 @@ function three(id) {
 
   if (i <= 3) {
     input.value = `${i++} مرة`;
-
+  }
+  if(input.value === "3 مرة"){
+    input.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -67,7 +77,9 @@ function three1(id) {
 
   if (i1 <= 3) {
     input2.value = `${i1++} مرة`;
-
+  }
+  if(input2.value === "3 مرة"){
+    input2.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -75,7 +87,9 @@ function three2(id) {
 
   if (i2 <= 3) {
     input3.value = `${i2++} مرة`;
-
+  }
+  if(input3.value === "3 مرة"){
+    input3.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -83,14 +97,18 @@ function three3(id) {
 
   if (i3 <= 3) {
     input4.value = `${i3++} مرة`;
-
+  }
+  if(input4.value === "3 مرة"){
+    input4.style.border = "3px solid #03a9f4";
   }
 }
 function three4(id) {
 
   if (i4 <= 3) {
     input5.value = `${i4++} مرة`;
-
+  }
+  if(input5.value === "3 مرة"){
+    input5.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -98,7 +116,9 @@ function three5(id) {
 
   if (i5 <= 3) {
     input6.value = `${i5++} مرة`;
-
+  }
+  if(input6.value === "3 مرة"){
+    input6.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -106,7 +126,9 @@ function three6(id) {
 
   if (i6 <= 3) {
     input7.value = `${i6++} مرة`;
-
+  }
+  if(input7.value === "3 مرة"){
+    input7.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -114,7 +136,9 @@ function three7(id) {
 
   if (i8 <= 3) {
     input8.value = `${i7++} مرة`;
-
+  }
+  if(input8.value === "3 مرة"){
+    input8.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -122,7 +146,9 @@ function three8(id) {
 
   if (i8 <= 3) {
     input9.value = `${i8++} مرة`;
-
+  }
+  if(input9.value === "3 مرة"){
+    input9.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -130,7 +156,9 @@ function three9(id) {
 
   if (i9 <= 3) {
     input10.value = `${i9++} مرة`;
-
+  }
+  if(input10.value === "3 مرة"){
+    input10.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -138,7 +166,9 @@ function three10(id) {
 
   if (i10 <= 3) {
     input11.value = `${i10++} مرة`;
-
+  }
+  if(input11.value === "3 مرة"){
+    input11.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -146,7 +176,9 @@ function three11(id) {
 
   if (i11 <= 3) {
     input12.value = `${i11++} مرة`;
-
+  }
+  if(input12.value === "3 مرة"){
+    input12.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -163,6 +195,7 @@ let input22 = document.getElementById("input22");
 let input23 = document.getElementById("input23");
 let input24 = document.getElementById("input24");
 let input25 = document.getElementById("input25");
+let input27 = document.getElementById("input27");
 
 let i12 = 1;
 let i13 = 1;
@@ -177,12 +210,15 @@ let i21 = 1;
 let i22 = 1;
 let i23 = 1;
 let i24 = 1;
+let i25 = 1;
 
 function three12(id) {
 
   if (i12 <= 4) {
     input13.value = `${i12++} مرة`;
-
+  }
+  if(input13.value === "4 مرة"){
+    input13.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -190,7 +226,9 @@ function three13(id) {
 
   if (i13 <= 4) {
     input14.value = `${i13++} مرة`;
-
+  }
+  if(input14.value === "4 مرة"){
+    input14.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -198,7 +236,9 @@ function three14(id) {
 
   if (i14 <= 7) {
     input15.value = `${i14++} مرة`;
-
+  }
+  if(input15.value === "7 مرة"){
+    input15.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -206,7 +246,9 @@ function three15(id) {
 
   if (i15 <= 7) {
     input16.value = `${i15++} مرة`;
-
+  }
+  if(input16.value === "7 مرة"){
+    input16.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -214,7 +256,9 @@ function hun1(id) {
 
   if (i16 <= 100) {
     input17.value = `${i16++} مرة`;
-
+  }
+  if(input17.value === "100 مرة"){
+    input17.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -222,14 +266,18 @@ function hun2(id) {
 
   if (i17 <= 100) {
     input18.value = `${i17++} مرة`;
-
+  }
+  if(input18.value === "100 مرة"){
+    input18.style.border = "3px solid #03a9f4";
   }
 }
 function hun3(id) {
 
   if (i18 <= 100) {
     input19.value = `${i18++} مرة`;
-
+  }
+  if(input19.value === "100 مرة"){
+    input19.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -237,7 +285,9 @@ function hun4(id) {
 
   if (i19 <= 100) {
     input20.value = `${i19++} مرة`;
-
+  }
+  if(input20.value === "100 مرة"){
+    input20.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -245,7 +295,6 @@ function hun5(id) {
 
   if (i20 <= 100) {
     input21.value = `${i20++} مرة`;
-
   }
 }
 
@@ -255,6 +304,9 @@ function ten1(id) {
     input22.value = `${i21++} مرة`;
 
   }
+  if(input22.value === "10 مرة"){
+    input22.style.border = "3px solid #03a9f4";
+  }
 }
 
 function ten2(id) {
@@ -262,6 +314,9 @@ function ten2(id) {
   if (i22 <= 10) {
     input23.value = `${i22++} مرة`;
 
+  }
+  if(input23.value === "10 مرة"){
+    input23.style.border = "3px solid #03a9f4";
   }
 }
 
@@ -271,31 +326,54 @@ function ten3(id) {
     input24.value = `${i23++} مرة`;
 
   }
+  if(input24.value === "10 مرة"){
+    input24.style.border = "3px solid #03a9f4";
+  }
 }
 
 function ten4(id) {
 
   if (i24 <= 10) {
     input25.value = `${i24++} مرة`;
-
+  }
+  if(input25.value === "10 مرة"){
+    input25.style.border = "3px solid #03a9f4";
   }
 }
-document.onkeydown = function(e) {
-if (e.keyCode == 123) {
-return false;
-}
-if (e.ctrlKey && e.shiftKey && e.keyCode ==  I .charCodeAt(0)) {
-return false;
-}
-if (e.ctrlKey && e.shiftKey && e.keyCode ==  J .charCodeAt(0)) {
-return false;
-}
-if (e.ctrlKey && e.keyCode ==  U .charCodeAt(0)) {
-return false;
-}
-if (e.ctrlKey && e.shiftKey && e.keyCode ==  C .charCodeAt(0)) {
-return false;
+
+function ten5(id) {
+
+  if (i25 <= 33) {
+    input27.value = `${i25++} مرة`;
+    if(input27.value === "33 مرة"){
+      input27.style.border = "3px solid #03a9f4";
+    }
+  }
 }
 
+let nomL = document.getElementById("nomL");
+let noom = document.getElementById("noom");
+
+nomL.onclick = function () {
+  noom.style.overflow = "unset";
+  noom.style.width = "auto";
+  noom.style.height = "auto";
 }
 
+let wakeL = document.getElementById("wakeL");
+let wake = document.getElementById("wake");
+
+wakeL.onclick = function () {
+  wake.style.overflow = "unset";
+  wake.style.width = "auto";
+  wake.style.height = "auto";
+}
+
+let nightL = document.getElementById("nightL");
+let night = document.getElementById("night");
+
+nightL.onclick = function () {
+  night.style.overflow = "unset";
+  night.style.width = "auto";
+  night.style.height = "auto";
+}
