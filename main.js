@@ -69,6 +69,7 @@ function three(id) {
     input.value = `${i++} مرة`;
   }
   if(input.value === "3 مرة"){
+    input.style.background = "#03a9f466";
     input.style.border = "3px solid #03a9f4";
   }
 }
@@ -79,6 +80,7 @@ function three1(id) {
     input2.value = `${i1++} مرة`;
   }
   if(input2.value === "3 مرة"){
+    input2.style.background = "#03a9f466";
     input2.style.border = "3px solid #03a9f4";
   }
 }
@@ -89,6 +91,7 @@ function three2(id) {
     input3.value = `${i2++} مرة`;
   }
   if(input3.value === "3 مرة"){
+    input3.style.background = "#03a9f466";
     input3.style.border = "3px solid #03a9f4";
   }
 }
@@ -99,6 +102,7 @@ function three3(id) {
     input4.value = `${i3++} مرة`;
   }
   if(input4.value === "3 مرة"){
+    input4.style.background = "#03a9f466";
     input4.style.border = "3px solid #03a9f4";
   }
 }
@@ -108,6 +112,7 @@ function three4(id) {
     input5.value = `${i4++} مرة`;
   }
   if(input5.value === "3 مرة"){
+    input5.style.background = "#03a9f466";
     input5.style.border = "3px solid #03a9f4";
   }
 }
@@ -118,6 +123,7 @@ function three5(id) {
     input6.value = `${i5++} مرة`;
   }
   if(input6.value === "3 مرة"){
+    input6.style.background = "#03a9f466";
     input6.style.border = "3px solid #03a9f4";
   }
 }
@@ -128,6 +134,7 @@ function three6(id) {
     input7.value = `${i6++} مرة`;
   }
   if(input7.value === "3 مرة"){
+    input7.style.background = "#03a9f466";
     input7.style.border = "3px solid #03a9f4";
   }
 }
@@ -138,6 +145,7 @@ function three7(id) {
     input8.value = `${i7++} مرة`;
   }
   if(input8.value === "3 مرة"){
+    input8.style.background = "#03a9f466";
     input8.style.border = "3px solid #03a9f4";
   }
 }
@@ -148,6 +156,7 @@ function three8(id) {
     input9.value = `${i8++} مرة`;
   }
   if(input9.value === "3 مرة"){
+    input9.style.background = "#03a9f466";
     input9.style.border = "3px solid #03a9f4";
   }
 }
@@ -158,6 +167,7 @@ function three9(id) {
     input10.value = `${i9++} مرة`;
   }
   if(input10.value === "3 مرة"){
+    input10.style.background = "#03a9f466";
     input10.style.border = "3px solid #03a9f4";
   }
 }
@@ -168,6 +178,7 @@ function three10(id) {
     input11.value = `${i10++} مرة`;
   }
   if(input11.value === "3 مرة"){
+    input11.style.background = "#03a9f466";
     input11.style.border = "3px solid #03a9f4";
   }
 }
@@ -178,6 +189,7 @@ function three11(id) {
     input12.value = `${i11++} مرة`;
   }
   if(input12.value === "3 مرة"){
+    input12.style.background = "#03a9f466";
     input12.style.border = "3px solid #03a9f4";
   }
 }
@@ -218,6 +230,7 @@ function three12(id) {
     input13.value = `${i12++} مرة`;
   }
   if(input13.value === "4 مرة"){
+    input13.style.background = "#03a9f466";
     input13.style.border = "3px solid #03a9f4";
   }
 }
@@ -228,6 +241,7 @@ function three13(id) {
     input14.value = `${i13++} مرة`;
   }
   if(input14.value === "4 مرة"){
+    input14.style.background = "#03a9f466";
     input14.style.border = "3px solid #03a9f4";
   }
 }
@@ -239,6 +253,7 @@ function three14(id) {
   }
   if(input15.value === "7 مرة"){
     input15.style.border = "3px solid #03a9f4";
+    input15.style.background = "#03a9f466";
   }
 }
 
@@ -248,6 +263,7 @@ function three15(id) {
     input16.value = `${i15++} مرة`;
   }
   if(input16.value === "7 مرة"){
+    input16.style.background = "#03a9f466";
     input16.style.border = "3px solid #03a9f4";
   }
 }
@@ -259,6 +275,8 @@ function hun1(id) {
   }
   if(input17.value === "100 مرة"){
     input17.style.border = "3px solid #03a9f4";
+    input17.style.background = "#03a9f466";
+
   }
 }
 
@@ -268,6 +286,7 @@ function hun2(id) {
     input18.value = `${i17++} مرة`;
   }
   if(input18.value === "100 مرة"){
+    input18.style.background = "#03a9f466";
     input18.style.border = "3px solid #03a9f4";
   }
 }
@@ -277,6 +296,7 @@ function hun3(id) {
     input19.value = `${i18++} مرة`;
   }
   if(input19.value === "100 مرة"){
+    input19.style.background = "#03a9f466";
     input19.style.border = "3px solid #03a9f4";
   }
 }
@@ -288,6 +308,7 @@ function hun4(id) {
   }
   if(input20.value === "100 مرة"){
     input20.style.border = "3px solid #03a9f4";
+    input20.style.background = "#03a9f466";
   }
 }
 
@@ -295,6 +316,10 @@ function hun5(id) {
 
   if (i20 <= 100) {
     input21.value = `${i20++} مرة`;
+  }
+  if(input21.value === "100 مرة"){
+    input21.style.border = "3px solid #03a9f4";
+    input21.style.background = "#03a9f466";
   }
 }
 
@@ -306,6 +331,7 @@ function ten1(id) {
   }
   if(input22.value === "10 مرة"){
     input22.style.border = "3px solid #03a9f4";
+    input22.style.background = "#03a9f466";
   }
 }
 
@@ -316,6 +342,7 @@ function ten2(id) {
 
   }
   if(input23.value === "10 مرة"){
+    input23.style.background = "#03a9f466";
     input23.style.border = "3px solid #03a9f4";
   }
 }
@@ -327,6 +354,7 @@ function ten3(id) {
 
   }
   if(input24.value === "10 مرة"){
+    input24.style.background = "#03a9f466";
     input24.style.border = "3px solid #03a9f4";
   }
 }
@@ -337,6 +365,7 @@ function ten4(id) {
     input25.value = `${i24++} مرة`;
   }
   if(input25.value === "10 مرة"){
+    input25.style.background = "#03a9f466";
     input25.style.border = "3px solid #03a9f4";
   }
 }
@@ -347,6 +376,7 @@ function ten5(id) {
     input27.value = `${i25++} مرة`;
     if(input27.value === "33 مرة"){
       input27.style.border = "3px solid #03a9f4";
+      input27.style.background = "#03a9f466";
     }
   }
 }
