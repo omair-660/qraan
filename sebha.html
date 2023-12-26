@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="utf-8">
     <title>السبحة</title>
-    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="master2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
@@ -23,7 +23,12 @@
 </div>
     </nav>
     </header>
+    
     <div class="sebha">
+      
+      <div id="replay">
+      إعادة البدأ
+    </div>
       <center id="center">
         0 مرة
         </center>
@@ -32,6 +37,12 @@
         body{
           overflow:hidden;
         }
+    #replay{
+      padding:12px;
+      margin-bottom:18px;
+      border:2px solid darkgreen;
+      border-radius:100px;
+    }
     </style>
     <script type="text/javascript">
       function toggleDarkMode() {
@@ -40,11 +51,19 @@
       document.getElementById("darkModeToggle").addEventListener("click", toggleDarkMode);
 
       let centeer = document.getElementById("center");
-      let i = 0;
+      let i = 1;
 
       centeer.onclick = function () {
       center.innerHTML= `${i++} مرة`;
       }
+
+ 
+ let replay = document.getElementById("replay");
+replay.onclick = function(){
+  center.innerHTML = '0 مرة';
+  i=1;
+  
+}
       </script>
   </body>
 </html>
