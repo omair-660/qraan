@@ -436,6 +436,7 @@ z-index: -1;
     padding: 20px 8%;
     position: relative;
   background: whitesmoke;
+  direction:ltr;
 }
 .dark-mode .form{
   background: #252525;
