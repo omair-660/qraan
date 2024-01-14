@@ -36,6 +36,13 @@ html{
     font-family: math;
     animation: tra 2s;
 }
+
+@keyframes tra {
+  0%{
+    transform: translateY(-300%);
+  }
+}
+
 .dark-mode #center{
   color: #fff;
   background: #000;
@@ -436,7 +443,6 @@ z-index: -1;
     padding: 20px 8%;
     position: relative;
   background: whitesmoke;
-  direction:ltr;
 }
 .dark-mode .form{
   background: #252525;
