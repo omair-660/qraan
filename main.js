@@ -407,3 +407,51 @@ nightL.onclick = function () {
   night.style.width = "auto";
   night.style.height = "auto";
 }
+let setting = document.getElementById("setting");
+let color = document.getElementById("color");
+
+let red = document.getElementById("red");
+let blue = document.getElementById("blue");
+let green = document.getElementById("green");
+
+let normal = document.getElementById("normal");
+let big = document.getElementById("big");
+let small = document.getElementById("small");
+
+let body = document.getElementById("body");
+
+setting.onclick = function () {
+  color.classList.toggle("open");
+  setting.classList.toggle("turn");
+}
+red.onclick = function () {
+  body.classList.add("red-mode");
+  body.classList.remove("blue-mode");
+  body.classList.remove("green-mode");
+}
+blue.onclick = function () {
+  body.classList.add("blue-mode");
+  body.classList.remove("red-mode");
+  body.classList.remove("green-mode");
+}
+green.onclick = function () {
+  body.classList.add("green-mode");
+  body.classList.remove("red-mode");
+  body.classList.remove("blue-mode");
+}
+
+normal.onclick = function () {
+  body.classList.add("normal");
+  body.classList.remove("big");
+  body.classList.remove("small");
+}
+big.onclick = function () {
+  body.classList.add("big");
+  body.classList.remove("normal");
+  body.classList.remove("small");
+}
+small.onclick = function () {
+  body.classList.add("small");
+  body.classList.remove("big");
+  body.classList.remove("normal");
+}
