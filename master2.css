@@ -149,7 +149,7 @@ html{
 header{
   width: 100%;
   background-color: var(--header-color);
-  padding: 19px 0;
+  padding: 12px 0;
   /* text-align: center; */
   position: fixed;
   top: 0;
@@ -181,7 +181,7 @@ nav h1::after {
   background-color: var(--h2-color);
   position: absolute;
   content: "";
-  bottom: -33px;
+  bottom: -25px;
   left: 0;
   width: 0;
   height: 3px;
@@ -770,6 +770,7 @@ background: var(--h2-color);
 .setting i{
   font-size: 35px;
   color: var(--h2-color);
+  transition: 0.5s;
 }
 div#color {
     position: fixed;
@@ -809,7 +810,7 @@ div#color.open{
     display: flex;
     align-items: center;
     width: ;
-    justify-content: center;
+    justify-content: ;
 }
 .col{
   gap:4px;
@@ -817,7 +818,8 @@ div#color.open{
   padding-bottom: 4px;
 }
 .font span {
-    margin: 12px;
+    margin: 0 6px ;
+  width: auto;
 }
 #replay {
     padding: 12px;
@@ -831,4 +833,8 @@ div#color.open{
 }
 p,h2,h1,q,span{
   transition: color 0.8s;
+}
+::selection{
+  color:#fff;
+  background: var(--h2-color)
 }

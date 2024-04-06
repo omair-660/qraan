@@ -10,11 +10,8 @@ addEventListener("mousemove",function (e) {
   `
 })
 
-function toggleDarkMode() {
-document.body.classList.toggle("dark-mode");
-}
 
-document.getElementById("darkModeToggle").addEventListener("click", toggleDarkMode);
+
 
 menu.onclick = function () {
   aside.classList.toggle("opeen");
@@ -407,6 +404,19 @@ nightL.onclick = function () {
   night.style.width = "auto";
   night.style.height = "auto";
 }
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+  
+  localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
+}
+
+
+if (localStorage.getItem("darkMode") === "true") {
+  document.body.classList.add("dark-mode");
+}
+
+document.getElementById("darkModeToggle").addEventListener("click", toggleDarkMode);
+
 let setting = document.getElementById("setting");
 let color = document.getElementById("color");
 
@@ -424,34 +434,57 @@ setting.onclick = function () {
   color.classList.toggle("open");
   setting.classList.toggle("turn");
 }
+
 red.onclick = function () {
   body.classList.add("red-mode");
   body.classList.remove("blue-mode");
   body.classList.remove("green-mode");
+  
+  localStorage.setItem("backgroundColor", "red");
 }
+
 blue.onclick = function () {
   body.classList.add("blue-mode");
   body.classList.remove("red-mode");
   body.classList.remove("green-mode");
+  localStorage.setItem("backgroundColor", "blue");
 }
+
 green.onclick = function () {
   body.classList.add("green-mode");
   body.classList.remove("red-mode");
   body.classList.remove("blue-mode");
+  localStorage.setItem("backgroundColor", "green");
 }
 
 normal.onclick = function () {
   body.classList.add("normal");
   body.classList.remove("big");
   body.classList.remove("small");
+  localStorage.setItem("fontSize", "normal");
 }
+
 big.onclick = function () {
   body.classList.add("big");
   body.classList.remove("normal");
   body.classList.remove("small");
+  localStorage.setItem("fontSize", "big");
 }
+
 small.onclick = function () {
   body.classList.add("small");
   body.classList.remove("big");
   body.classList.remove("normal");
+  localStorage.setItem("fontSize", "small");
+}
+
+
+const backgroundColor = localStorage.getItem("backgroundColor");
+if (backgroundColor) {
+  body.classList.add(`${backgroundColor}-mode`);
+}
+
+const fontSize = localStorage.getItem("fontSize");
+if (fontSize) {
+  body.classList.add(fontSize);
 }
